@@ -247,11 +247,11 @@ import pandas as pd
 import os
 
 # Đọc file CSV chứa đường dẫn ảnh
-all_image_path_csv = r'..\..\data\processed\all_image_paths.csv'
+all_image_path_csv = r'../../data/processed/Dataset_1/all_image_paths.csv'
 df_image_paths = pd.read_csv(all_image_path_csv)
 
 # Đọc file CSV chứa bounding boxes
-bbox_csv_path = r'..\..\data\processed\all_bounding_boxes.csv'
+bbox_csv_path = r'../../data/processed/Dataset_1/all_bounding_boxes.csv'
 df_bounding_boxes = pd.read_csv(bbox_csv_path)
 
 # Kiểm tra số lượng hàng trong mỗi DataFrame
@@ -270,8 +270,8 @@ print(f"Combined data saved to {combined_csv_path}")
 import pandas as pd
 
 # Đọc hai file CSV
-all_dog_bounding_boxes = pd.read_csv(r'..\..\data\processed\all_dog_bounding_boxes.csv')
-combine_df = pd.read_csv(r'..\..\data\processed\combined_image_paths_and_boxes.csv')
+all_dog_bounding_boxes = pd.read_csv(r'../../data/processed/Dataset_1/all_dog_bounding_boxes.csv')
+combine_df = pd.read_csv(r'../../data/processed/Dataset_1/combined_image_paths_and_boxes.csv')
 
 # Đổi tên cột trong all_dog_bounding_boxes_df để khớp với combine_df
 combine_df.rename(columns={'all_image_path': 'image_path'}, inplace=True)
@@ -329,7 +329,7 @@ iou_threshold = 0.5
 outliers = merged_df[merged_df['iou'] < iou_threshold]
 
 # Lưu kết quả vào file CSV
-outliers_csv_path = r'..\..\data\processed\outliers.csv'
+outliers_csv_path = r'../../data/processed/Dataset_1/outliers.csv'
 outliers.to_csv(outliers_csv_path, index=False)
 
 print(f"Outliers saved to {outliers_csv_path}")
@@ -419,7 +419,7 @@ iou_threshold = 0.5
 outliers = merged_df[merged_df['iou'] < iou_threshold]
 
 # Lưu outliers vào file CSV
-outliers_csv_path = r'..\..\data\processed\outliers.csv'
+outliers_csv_path = r'../../data/processed/Dataset_1/outliers.csv'
 outliers.to_csv(outliers_csv_path, index=False)
 
 # Lưu dữ liệu không chứa outliers vào file CSV

@@ -4,9 +4,9 @@
 #%%
 import zipfile
 
-zip_path = r"..\..\data\raw\dataset_2\archive.zip"  
+zip_path = r"../../data/raw/dataset_2/archive.zip"
 
-extract_path = r"..\..\data\raw\dataset_2"  
+extract_path = r"../../data/raw/dataset_2"
 
 with zipfile.ZipFile(zip_path, "r") as zip_ref:
     zip_ref.extractall(extract_path)
@@ -21,8 +21,8 @@ import cv2
 import random
 #%%
 # Load in dataset
-train_dir = r"..\..\data\raw\dataset_2\train" 
-data_df = pd.read_csv(r"..\..\data\raw\dataset_2\dogs.csv" )
+train_dir = r"../../data/raw/dataset_2/train"
+data_df = pd.read_csv(r"../../data/raw/dataset_2/dogs.csv")
 
 print(data_df.shape)
 
@@ -90,7 +90,7 @@ plt.show()
 sample_images = random.sample(list(train_df['filepaths']), 5)
 
 for img_path in sample_images:
-    img = cv2.imread(os.path.join(r"..\..\data\raw\dataset_2", img_path))
+    img = cv2.imread(os.path.join(r"../../data/raw/dataset_2", img_path))
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     plt.imshow(img)
     plt.title(img_path)
