@@ -4,7 +4,7 @@ This Data Mining project focuses primarily on data exploration and data preproce
 
 ## Dataset
 
-The dataset used in this project is the Stanford Dogs Dataset. You can download it from Kaggle:
+The dataset used in this project is the Stanford Dogs Dataset, and 70 Dog Breeds-Image Data Set. You can download it from Kaggle:
 
 1. [Stanford Dogs Dataset](https://www.kaggle.com/datasets/jessicali9530/stanford-dogs-dataset)
 1. [70 Dog Breeds-Image Data Set](https://www.kaggle.com/datasets/gpiosenka/70-dog-breedsimage-data-set)
