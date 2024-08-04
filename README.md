@@ -30,4 +30,4 @@ Follow the steps below to run the project:
    - Run the `Data_Classification_1.ipynb` notebook to train and evaluate the classification model.
    - Run the `Data_Preprocess_2.ipynb` notebook to train and evaluate the classification model.
 
-Ensure that you have all the necessary dependencies installed before running the notebooks. You can find the list of dependencies in the `requirements.txt` file.
+Ensure that you have all the necessary dependencies installed before running the notebooks. 
